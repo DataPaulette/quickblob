@@ -13,7 +13,7 @@ VERSION=$(shell date +%Y%m%d)
 all: csv-blobs
 	./csv-blobs -t 128 --bbox sample/lorem.png > data.csv
 	python sample/show-blobs.py data.csv sample/lorem.png sample/blobs.png
-	eog sample/*png
+	firefox sample/*png &
 
 csv-blobs: csv-blobs.o quickblob.a
 
