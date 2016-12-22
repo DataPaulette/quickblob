@@ -39,4 +39,7 @@ tcc-blobs:
 clean:
 	$(RM) *.o *.a csv-blobs blobmark tcc-blobs gmon.out
 
+xclean: clean
+	git clean -f
+
 .PHONY: all clean strip profile
