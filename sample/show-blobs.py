@@ -9,8 +9,8 @@ def bb(x, y, r):
     return x-r, y-r, x+r, y+r
 
 if len(sys.argv) != 4:
-    print("csv-blobs -t 128 --bbox lorem.png > data.csv")
-    print("show-blobs.py data.csv lorem.png blobs.png")
+    print("csv-blobs -t 128 --bbox input.png > data.csv")
+    print("show-blobs.py data.csv input.png blobs.png")
     sys.exit(2)
 
 data   = sys.argv[1]
